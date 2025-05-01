@@ -26,7 +26,7 @@ const Header = () => {
         scrolled ? "bg-white/90 backdrop-blur shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="flex justify-between items-center py-6 md:py-8">
+      <div className="flex justify-between items-center py-8 ">
         <div className="text-lg">Omatsola Yarumen</div>
         <nav className="relative">
           <button

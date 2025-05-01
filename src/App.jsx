@@ -7,8 +7,8 @@ import {
 import RootLayout from "./assets/components/RootLayout";
 import Home from "./screens/Home";
 import About from "./screens/About";
+import Explore from "./screens/Explore";
 import Contact from "./screens/Contact";
-import ShowCase from "./screens/Explore";
 import ProjectDetails from "./screens/ProjectDetails";
 const App = () => {
   const router = createBrowserRouter(
@@ -16,8 +16,8 @@ const App = () => {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="explore" element={<Explore />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="show_case" element={<ShowCase />} />
         <Route path="project_details/:id" element={<ProjectDetails />} />
       </Route>
     )

@@ -1,9 +1,7 @@
 import Cta from "../assets/components/Cta.jsx";
 import ProjectCard from "../assets/components/ProjectCard.jsx";
-import { Link } from "react-router-dom";
-import { projects } from "../constants/index.js";
 
-const ShowCase = () => {
+const Explore = () => {
   return (
     <section>
       <section className="px-2  py-30 ">
@@ -15,4 +13,4 @@ const ShowCase = () => {
   );
 };
 
-export default ShowCase;
+export default Explore;

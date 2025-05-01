@@ -59,7 +59,7 @@ const Home = () => {
           <div className="flex justify-center md:justify-start  ">
             <Link
               to="/about"
-              className="w-full px-12 py-3 border-1 border-gray-500 hover:bg-gray-500 hover:text-white transition"
+              className="w-full px-12 py-3 border-1 border-gray-500 hover:bg-gray-500 hover:text-white  transition"
             >
               More About Me →
             </Link>
