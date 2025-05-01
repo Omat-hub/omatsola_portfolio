@@ -6,7 +6,4 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss(), react()],
   base: "/", // This makes sure all paths are relative to the root
-  server: {
-    historyApiFallback: true, // Ensures routing works on page reload
-  },
 });
