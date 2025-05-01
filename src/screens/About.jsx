@@ -103,22 +103,22 @@ const About = () => {
 
             <div className="flex flex-row text-center text-base md:text-lg font-medium justify-between">
             <a
-                href="#projects"
+                href="https://wa.me/qr/4CBTXBLTT4APO1"
                 className="flex-1 py-8  w-full    hover:bg-green-300 transition bg-gray-100"
               >
                 Whatsapp
               </a>
               <a
-                href="#projects"
+                href="https://github.com/Omat-hubs"
                 className="flex-1 py-8  w-full   hover:bg-red-300 transition bg-gray-100"
               >
-                Instagram
+                Github
               </a>
               <a
-                href="#projects"
+                href="https://www.linkedin.com/in/omatsolayarumen"
                 className="flex-1 py-8  w-full   hover:bg-blue-300 transition  bg-gray-100"
               >
-                Twitter
+                LinkedIn
               </a>
             </div>
           </div>

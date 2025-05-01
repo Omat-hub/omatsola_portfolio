@@ -20,19 +20,19 @@ const Home = () => {
 
             <div className="flex flex-col text-center flex-wrap justify-between w-full gap-2">
               <a
-                href="#projects"
+                href="https://wa.me/qr/4CBTXBLTT4APO1"
                 className="px-6 py-6  hover:bg-green-300 transition bg-gray-100"
               >
                 Whatsapp
               </a>
               <a
-                href="#projects"
+                href="https://github.com/Omat-hubs"
                 className="px-6 py-6  hover:bg-red-300 transition bg-gray-100"
               >
-                Instagram
+                Github
               </a>
               <a
-                href="#projects"
+                href="https://www.linkedin.com/in/omatsolayarumen"
                 className="px-6 py-6  hover:bg-blue-300 transition  bg-gray-100"
               >
                 LinkedIn

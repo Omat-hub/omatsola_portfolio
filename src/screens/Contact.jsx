@@ -29,29 +29,31 @@ const Contact = () => {
 
         <div className="self-end">
           <p className="font-light">Drop an email</p>
-          <a href="yarumenomatsola@gmail.com">yarumenomatsola@gmail.com</a>
+          <a href="mailto:yarumenomatsola@gmail.com">
+            yarumenomatsola@gmail.com
+          </a>
         </div>
 
         <div className="md:col-span-2 self-end">
           <p className="font-light">Check us out on</p>
           <div className="flex flex-row text-center  font-medium justify-center ">
             <a
-              href="#projects"
+              href="https://wa.me/qr/4CBTXBLTT4APO1"
               className="flex-1 py-6  hover:bg-green-300 transition bg-gray-100"
             >
               Whatsapp
             </a>
             <a
-              href="#projects"
+              href="https://github.com/Omat-hubs"
               className="flex-1 py-6  hover:bg-red-300 transition bg-gray-100"
             >
-              Instagram
+              Github
             </a>
             <a
-              href="#projects"
+              href="https://www.linkedin.com/in/omatsolayarumen"
               className="flex-1 py-6   hover:bg-blue-300 transition  bg-gray-100"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
         </div>
