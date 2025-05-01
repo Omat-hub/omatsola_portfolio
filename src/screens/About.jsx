@@ -127,7 +127,7 @@ const About = () => {
         {/* Image side (2/5 columns) */}
         <aside className="md:col-span-3 w-full h-auto sticky top-0 self-start">
           <img
-            src="/public/images/2150170514.jpg"
+            src="images/2150170514.jpg"
             alt="artist painting paper"
             className="w-full h-1/2 md:h-screen object-cover"
           />
