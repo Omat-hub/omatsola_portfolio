@@ -45,7 +45,7 @@ const Header = () => {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/show_case">Explore</NavLink>
+              <NavLink to="/explore">Explore</NavLink>
             </li>
             <li>
               <NavLink to="/contact">Contact</NavLink>
@@ -71,7 +71,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li className="p-8">
-          <NavLink to="/show_case" onClick={() => setIsMenuOpen(false)}>
+          <NavLink to="/explore" onClick={() => setIsMenuOpen(false)}>
             Explore
           </NavLink>
         </li>

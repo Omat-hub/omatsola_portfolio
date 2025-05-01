@@ -35,7 +35,7 @@ const Home = () => {
                 href="#projects"
                 className="px-6 py-6  hover:bg-blue-300 transition  bg-gray-100"
               >
-                Twitter
+                LinkedIn
               </a>
             </div>
           </div>
@@ -79,7 +79,7 @@ const Home = () => {
           <div>
             <div className="flex justify-center  w-full">
               <Link
-                to="/show_case"
+                to="/explore"
                 className="text-center w-full px-12 py-3 border-1 border-gray-500 hover:bg-gray-500 hover:text-white transition"
               >
                 Explore →
