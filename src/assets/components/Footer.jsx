@@ -9,17 +9,29 @@ const Footer = () => {
           <nav>
             <ul className="flex space-x-8">
               <li>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/omatsolayarumen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Omat-hubs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://wa.me/qr/4CBTXBLTT4APO1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   WhatsApp
                 </a>
               </li>
