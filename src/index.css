@@ -4,6 +4,11 @@
 * {
   font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #16302b #e0e0e0;      
+  
+  
+ 
 }
 body {
   background-color: #e0e0e0;
