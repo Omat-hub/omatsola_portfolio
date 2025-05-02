@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="flex items-start justify-between bg-gray-800 text-white text-sm  py-4 px-2">
+      <div className="flex items-start justify-between bg-gray-800  text-sm  py-4 container-padding text-offwhite bg-pantone">
         <p>© 2025 Omatsola Yarumen. All rights reserved.</p>
 
         <div className="footer-bottom flex flex-col space-y-2">
@@ -13,6 +13,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/omatsolayarumen"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
                 >
                   LinkedIn
                 </a>
@@ -22,6 +23,7 @@ const Footer = () => {
                   href="https://github.com/Omat-hubs"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-red-500 hover:underline"
                 >
                   GitHub
                 </a>
@@ -30,7 +32,8 @@ const Footer = () => {
                 <a
                   href="https://wa.me/qr/4CBTXBLTT4APO1"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer" 
+                  className="text-green-500 hover:underline"
                 >
                   WhatsApp
                 </a>

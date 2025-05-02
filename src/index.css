@@ -3,12 +3,58 @@
 
 * {
   font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
 }
+body {
+  background-color: #e0e0e0;
+}
+
+@theme {
+  --color-pantone: #16302b;
+  --color-offwhite: #e0e0e0;
+  --color-accent: #510a32;
+  --color-highlight: #ee4540;
+}
+
+.btn {
+  @apply px-6 py-6 border-1  border-highlight
+  hover:border-accent transition-all duration-300 ease-in-out}
+
+.btn-primary {
+  @apply w-full px-14 py-6 bg-accent text-offwhite text-center hover:bg-highlight hover:text-pantone transition-all duration-300 ease-in-out;
+}
+.btn-secondary {
+  @apply w-full px-16 py-6 text-pantone border-1  border-pantone text-center hover:bg-highlight hover:text-offwhite transition-all duration-300 ease-in-out;
+}
+.btn-cta {
+  @apply w-full px-16 py-6 text-offwhite  bg-accent text-center hover:bg-pantone hover:scale-105 transition-all duration-300 ease-in-out;
+}
+
 
 a.active {
-  @apply text-amber-600;
+  @apply text-highlight;
 }
 
-.padding {
-  @apply px-2;
+.container-padding {
+  @apply px-4 md:pl-6 lg:px-8;
+}
+
+.bg-pantone {
+  background-color: #16302b;
+}
+.text-pantone {
+  color: #16302b;
+}
+
+.bg-offwhite {
+  color: #e0e0e0;
+}
+.text-offwhite {
+  color: #e0e0e0;
+}
+.bg-accent {
+  --color: #510a32;
+}
+.text-accent {
+  color: #510a32;
 }

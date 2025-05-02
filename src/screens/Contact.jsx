@@ -1,12 +1,12 @@
 const Contact = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 md:max-h-[760px] gap-4 px-2 pt-20 pb-10 md:pt-50">
+    <section className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 md:max-h-[760px] gap-4 pt-30 pb-10 md:pt-50 container-padding">
       {/* Profile Image */}
       <figure className="md:col-span-2 md:row-span-3 order-1">
         <img
           src="/images/portfolioimg.jpeg"
           alt="Omatsola Yarumen"
-          className="w-full h-full object-contain"
+          className="w-full h-[400px] object-cover md:object-contain"
         />
       </figure>
 

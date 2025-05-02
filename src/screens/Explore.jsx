@@ -4,8 +4,8 @@ import ProjectCard from "../assets/components/ProjectCard.jsx";
 const Explore = () => {
   return (
     <section>
-      <section className="px-2  py-30 ">
-        <h1 className="text-[clamp(5rem,8vw,8rem)] text-right">Explore</h1>
+      <section className=" py-30 container-padding">
+        <h1 className="text-[clamp(5rem,8vw,8rem)] text-right text-pantone ">Explore</h1>
         <ProjectCard showAll={true} />
       </section>
       <Cta />

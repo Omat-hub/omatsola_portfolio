@@ -9,7 +9,7 @@ const Preloader = ({ isLoading }) => (
         animate={{ y: 0 }} // Slide down to center
         exit={{ y: "100%" }} // Slide down (out) below the screen
         transition={{ duration: 1, ease: "circInOut" }}
-        className="fixed inset-0 z-50 bg-[#e8efed] flex items-center justify-center text-[#A0430A]"
+        className="fixed inset-0 z-50 bg-[#510a32] flex items-center justify-center text-[#e0e0e0]"
       >
         <motion.div
           initial={{ opacity: 0 }}

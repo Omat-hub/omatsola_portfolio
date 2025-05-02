@@ -13,11 +13,12 @@ const ProjectDetails = () => {
   }
 
   return (
-    <section className=" pt-30 ">
+    <section className=" pt-30 text-accent">
+      
+      <article className="grid grid-cols-1 md:grid-cols-2 gap-2 container-padding">
       <h1 className="text-[clamp(3rem,8vw,5rem)] text-right">
         {project.title}
       </h1>
-      <article className="grid grid-cols-1 md:grid-cols-2 gap-2 px-2 ">
         <img
           src={project.imageUrl}
           alt={project.title}
@@ -29,7 +30,7 @@ const ProjectDetails = () => {
           </h2>
 
           {project.detailedDescription.paragraphs.map((para, index) => (
-            <p key={index} className="text-gray-700 leading-relaxed">
+            <p key={index} className=" leading-relaxed">
               {para}
             </p>
           ))}
@@ -52,7 +53,7 @@ const ProjectDetails = () => {
             </ul>
           </div>
 
-          <p className="mt-4 text-gray-600 italic">
+          <p className="mt-4 text-pantone italic">
             {project.detailedDescription.summary}
           </p>
         </div>

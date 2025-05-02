@@ -22,8 +22,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-20 px-2 transition-colors duration-300 ${
-        scrolled ? "bg-white/90 backdrop-blur shadow-md" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-20 transition-colors duration-300 container-padding text-offwhite   ${
+        scrolled ? "bg-pantone backdrop-blur shadow-md" : "bg-pantone/50"
       }`}
     >
       <div className="flex justify-between items-center py-8 ">
@@ -56,7 +56,7 @@ const Header = () => {
 
       {/* Mobile menu placed here for full width */}
       <ul
-        className={`absolute top-[75px] left-0 w-full h-130 flex flex-col justify-center items-center bg-white shadow-md md:hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-[75px] left-0 w-full h-130 flex flex-col justify-center items-center  shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out ${
           isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
         }`}
       >
