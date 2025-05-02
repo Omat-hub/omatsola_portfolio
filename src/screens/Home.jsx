@@ -64,7 +64,7 @@ const Home = () => {
       </section>
 
       {/* Third Section */}
-      <section className=" py-10 container-padding text-pantone">
+      <section className=" py-30 container-padding text-pantone">
         <h2 className="text-2xl mb-4 text-right md:text-left ">
           Some Of My Works
         </h2>
