@@ -43,7 +43,7 @@ const Home = () => {
       </section>
 
       {/* Second Section */}
-      <section className="flex flex-col md:flex-row h-[50vh] md:min-h-[60vh]  items-center md:items-center justify-end container-padding ">
+      <section className="flex flex-col md:flex-row h-[50vh] md:min-h-[60vh]  items-center md:items-center justify-end py-6 container-padding ">
         <div className="flex flex-col flex-1 items-start md:items-end justify-center gap-6 max-w-prose">
           <p className="text-xl text-justify md:text-left text-pantone">
             Frontend developer and UI designer focused on crafting
