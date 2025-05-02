@@ -43,7 +43,7 @@ const Home = () => {
       </section>
 
       {/* Second Section */}
-      <section className="flex flex-col md:flex-row h-[50vh] md:min-h-[60vh]  items-center md:items-center justify-end py-6 container-padding ">
+      <section className="flex flex-col md:flex-row md:min-h-[60vh]  items-center md:items-center justify-end pt-30 container-padding ">
         <div className="flex flex-col flex-1 items-start md:items-end justify-center gap-6 max-w-prose">
           <p className="text-xl text-justify md:text-left text-pantone">
             Frontend developer and UI designer focused on crafting
@@ -69,12 +69,12 @@ const Home = () => {
           Some Of My Works
         </h2>
         <ProjectCard showAll={false} />
-        <div className="grid grid-rows-2 pb-10  items-center justify-center">
-          <h2 className="text-2xl">Explore More Of My Works</h2>
+        <div className="grid grid-rows-2 pb-10 md:justify-self-end  items-center justify-center">
+          <h2 className="text-2xl md:text-3xl">Explore More Of My Works</h2>
 
           <div>
-            <div className="flex justify-center  w-full">
-              <Link to="/explore" className="btn-secondary">
+            <div className="flex justify-center w-full">
+              <Link to="/explore" className=" btn-secondary">
                 Explore →
               </Link>
             </div>

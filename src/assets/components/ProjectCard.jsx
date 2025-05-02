@@ -7,7 +7,7 @@ const ProjectCard = ({ showAll = false }) => {
     <section className="pb-10">
       <ul className="grid grid-cols-1 gap-6 md:gap-10">
         {displayedProjects.map((project) => (
-          <li key={project.id} className=" shadow-lg hover:hover:scale-102 transition-all duration-300 overflow-hidden ">
+          <li key={project.id} className=" hover:shadow-lg hover:hover:scale-102 transition-all duration-300 overflow-hidden ">
             <Link
               to={`/project_details/${project.id}`}
               className="grid grid-cols-1 md:grid-cols-6"

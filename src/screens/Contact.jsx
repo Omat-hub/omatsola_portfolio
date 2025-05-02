@@ -35,27 +35,27 @@ const Contact = () => {
         </div>
 
         <div className="md:col-span-2 self-end">
-          <p className="font-light">Check us out on</p>
-          <div className="flex flex-row text-center  font-medium justify-center ">
-            <a
-              href="https://wa.me/qr/4CBTXBLTT4APO1"
-              className="flex-1 py-6  hover:bg-green-300 transition bg-gray-100"
-            >
-              Whatsapp
-            </a>
-            <a
-              href="https://github.com/Omat-hubs"
-              className="flex-1 py-6  hover:bg-red-300 transition bg-gray-100"
-            >
-              Github
-            </a>
-            <a
-              href="https://www.linkedin.com/in/omatsolayarumen"
-              className="flex-1 py-6   hover:bg-blue-300 transition  bg-gray-100"
-            >
-              LinkedIn
-            </a>
-          </div>
+          <p className="font-light">Send a chat</p>
+          <div className="flex  text-center flex-wrap justify-between w-full gap-2">
+              <a
+                href="https://wa.me/qr/4CBTXBLTT4APO1"
+                className=" flex-1 hover:bg-green-300 hover:text-black transition btn"
+              >
+                Whatsapp
+              </a>
+              <a
+                href="https://github.com/Omat-hubs"
+                className="flex-1 hover:bg-red-300 hover:text-black transition btn"
+              >
+                Github
+              </a>
+              <a
+                href="https://www.linkedin.com/in/omatsolayarumen"
+                className="flex-1 hover:bg-blue-300 hover:text-black transition  btn"
+              >
+                LinkedIn
+              </a>
+            </div>
         </div>
       </address>
     </section>

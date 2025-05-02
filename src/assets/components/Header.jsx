@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,7 +36,11 @@ const Header = () => {
             className="md:hidden text-2xl focus:outline-none"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
-            {isMenuOpen ? "✖" : "☰"}
+            {isMenuOpen ? (
+              <AiOutlineClose size={30} />
+            ) : (
+              <GiHamburgerMenu size={30} />
+            )}
           </button>
 
           <ul className="hidden md:flex space-x-6 text-lg">
@@ -56,27 +62,34 @@ const Header = () => {
 
       {/* Mobile menu placed here for full width */}
       <ul
-        className={`absolute top-[75px] left-0 w-full h-130 flex flex-col justify-center items-center  shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out ${
+        className={`absolute top-[75px] left-0 w-full h-130 flex flex-col justify-center items-center  shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-6 ${
           isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
         }`}
       >
-        <li className="p-8">
-          <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
+        <li>
+          <NavLink
+            to="/"
+            onClick={() => setIsMenuOpen(false)}
+            className="py-6 px-40"
+          >
             Home
           </NavLink>
         </li>
-        <li className="p-8">
-          <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
+        <li>
+          <NavLink to="/about" onClick={() => setIsMenuOpen(false)}
+          className="py-6 px-40">
             About
           </NavLink>
         </li>
-        <li className="p-8">
-          <NavLink to="/explore" onClick={() => setIsMenuOpen(false)}>
+        <li>
+          <NavLink to="/explore" onClick={() => setIsMenuOpen(false)}
+          className="py-6 px-40">
             Explore
           </NavLink>
         </li>
-        <li className="p-8">
-          <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
+        <li>
+          <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}
+          className="py-6 px-40">
             Contact
           </NavLink>
         </li>
