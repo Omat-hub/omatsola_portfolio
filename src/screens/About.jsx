@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section className="py-20 md:py-0">
       <article className="grid grid-cols-1 md:grid-cols-6 gap-2 min-h-screen container-padding text-pantone">
-        <div className="md:col-span-3 md:pt-30">
+        <div className="md:col-span-3 md:pt-40">
           <header>
             <h1 className=" text-[clamp(5rem,8vw,8rem)]">About</h1>
           </header>

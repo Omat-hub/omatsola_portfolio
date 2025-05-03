@@ -62,7 +62,7 @@ const Header = () => {
 
       {/* Mobile menu placed here for full width */}
       <ul
-        className={`absolute top-[75px] left-0 w-full h-130 flex flex-col justify-center items-center  shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-6 ${
+        className={`absolute top-[80px] left-0 w-full h-130 flex flex-col justify-center items-center  shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-6 ${
           isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
         }`}
       >
