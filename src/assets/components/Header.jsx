@@ -62,38 +62,28 @@ const Header = () => {
 
       {/* Mobile menu placed here for full width */}
       <ul
-        className={`absolute top-[80px] left-0 w-full h-130 flex flex-col justify-center items-center  shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-6 ${
-          isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
-        }`}
+  className={`absolute top-[100px] left-0 w-full h-[500px] flex flex-col justify-center items-center shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-2 ${
+    isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
+  }`}
+>
+  {[
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/explore", label: "Explore" },
+    { to: "/contact", label: "Contact" },
+  ].map((link) => (
+    <li key={link.to} className="w-full">
+      <NavLink
+        to={link.to}
+        onClick={() => setIsMenuOpen(false)}
+        className="block w-full px-6 py-5 text-center active:bg-[#ffffff22] active:scale-95 transition-all"
       >
-        <li>
-          <NavLink
-            to="/"
-            onClick={() => setIsMenuOpen(false)}
-            className="py-6 px-40"
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" onClick={() => setIsMenuOpen(false)}
-          className="py-6 px-40">
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/explore" onClick={() => setIsMenuOpen(false)}
-          className="py-6 px-40">
-            Explore
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}
-          className="py-6 px-40">
-            Contact
-          </NavLink>
-        </li>
-      </ul>
+        {link.label}
+      </NavLink>
+    </li>
+  ))}
+</ul>
+
     </header>
   );
 };
