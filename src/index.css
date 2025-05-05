@@ -5,10 +5,7 @@
   font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #16302b #e0e0e0;      
-  
-  
- 
+  scrollbar-color: #16302b #e0e0e0;
 }
 body {
   background-color: #e0e0e0;
@@ -22,8 +19,13 @@ body {
 }
 
 .btn {
-  @apply px-6 py-6 border-1  border-highlight
-  hover:border-accent transition-all duration-300 ease-in-out}
+  @apply px-6 py-6 text-offwhite bg-accent hover:bg-pantone shadow-2xl
+   transition-all duration-300 ease-in-out;
+}
+
+.btn {
+  @apply px-16 py-6 text-offwhite bg-pantone hover:bg-accent text-center  hover:scale-105 transition-all duration-300 ease-in-out;
+}
 
 .btn-primary {
   @apply w-full px-14 py-6 bg-accent text-offwhite text-center hover:bg-highlight hover:text-pantone transition-all duration-300 ease-in-out;
@@ -34,7 +36,6 @@ body {
 .btn-cta {
   @apply w-full px-16 py-6 text-offwhite  bg-accent text-center hover:bg-pantone hover:scale-105 transition-all duration-300 ease-in-out;
 }
-
 
 a.active {
   @apply text-highlight;

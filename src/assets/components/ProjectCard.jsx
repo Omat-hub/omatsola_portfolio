@@ -12,7 +12,7 @@ const ProjectCard = ({ showAll = false }) => {
               to={`/project_details/${project.id}`}
               className="grid grid-cols-1 md:grid-cols-6"
             >
-              <span className="text-[clamp(3rem,8vw,5rem)] text-left md:text-center leading-16 ">
+              <span className="text-[clamp(3rem,8vw,5rem)] text-left md:text-left leading-16 ">
                 0{project.id}
               </span>
               <div className="py-4 md:py-0 md:col-span-2">
@@ -25,7 +25,7 @@ const ProjectCard = ({ showAll = false }) => {
                 src={project.imageUrl}
                 alt={project.title}
                 loading="lazy"
-                className="w-full h-110 md:col-span-3"
+                className="w-full h-120 md:col-span-3"
               />
             </Link>
           </li>
