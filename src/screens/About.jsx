@@ -99,7 +99,8 @@ const About = () => {
           <img
             src="images/2150170514.jpg"
             alt="artist painting paper"
-            className="w-full h-1/2 md:h-screen object-cover"
+            className="w-full h-1/2 md:h-screen object-cover hidden md:block rounded-br-full "
+            loading="lazy"
           />
         </aside>
       </article>
