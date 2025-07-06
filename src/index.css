@@ -4,8 +4,7 @@
 * {
   font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
-  scrollbar-width: thin;
-  scrollbar-color: #16302b #e0e0e0;
+  scrollbar-width: none;
 }
 body {
   background-color: #e0e0e0;
@@ -15,26 +14,27 @@ body {
   --color-pantone: #16302b;
   --color-offwhite: #e0e0e0;
   --color-accent: #510a32;
-  --color-highlight: #ee4540;
+  --color-highlight: 		#b78b4c;
 }
 
 .btn {
-  @apply px-6 py-6 text-offwhite bg-accent hover:bg-pantone shadow-2xl
+  @apply px-6 py-4 text-offwhite bg-accent hover:bg-pantone shadow-xl
    transition-all duration-300 ease-in-out;
 }
 
 .btn {
-  @apply px-16 py-6 text-offwhite bg-pantone hover:bg-accent text-center  hover:scale-105 transition-all duration-300 ease-in-out;
+  @apply px-16 py-4 text-offwhite bg-pantone hover:bg-accent text-center  hover:scale-105 transition-all duration-300 ease-in-out;
 }
 
 .btn-primary {
-  @apply w-full px-14 py-6 bg-accent text-offwhite text-center hover:bg-highlight hover:text-pantone transition-all duration-300 ease-in-out;
+  @apply w-full px-14 py-4 bg-accent text-offwhite text-center hover:bg-highlight hover:text-pantone transition-all duration-300 ease-in-out;
 }
 .btn-secondary {
-  @apply w-full px-16 py-6 text-pantone border-1  border-pantone text-center hover:bg-highlight hover:text-offwhite transition-all duration-300 ease-in-out;
+  @apply w-full px-16 py-4 text-pantone border-1  border-pantone text-center hover:shadow-lg transition-all duration-300 ease-in-out;
 }
+
 .btn-cta {
-  @apply w-full px-16 py-6 text-offwhite  bg-accent text-center hover:bg-pantone hover:scale-105 transition-all duration-300 ease-in-out;
+  @apply w-full px-16 py-4 text-offwhite  bg-accent text-center hover:bg-pantone hover:scale-105 transition-all duration-300 ease-in-out;
 }
 
 a.active {

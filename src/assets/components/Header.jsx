@@ -29,11 +29,11 @@ const Header = () => {
       }`}
     >
       <div className="flex justify-between items-center py-8 ">
-        <div className="text-lg">Omatsola Yarumen</div>
+        <div className="text-base">Omatsola Yarumen</div>
         <nav className="relative">
           <button
             onClick={toggleMenu}
-            className="md:hidden text-2xl focus:outline-none"
+            className="md:hidden text-base focus:outline-none"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? (
@@ -43,7 +43,7 @@ const Header = () => {
             )}
           </button>
 
-          <ul className="hidden md:flex space-x-6 text-lg">
+          <ul className="hidden md:flex space-x-6 text-base">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -62,28 +62,27 @@ const Header = () => {
 
       {/* Mobile menu placed here for full width */}
       <ul
-  className={`absolute top-[100px] left-0 w-full h-[500px] flex flex-col justify-center items-center shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-2 ${
-    isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
-  }`}
->
-  {[
-    { to: "/", label: "Home" },
-    { to: "/about", label: "About" },
-    { to: "/explore", label: "Explore" },
-    { to: "/contact", label: "Contact" },
-  ].map((link) => (
-    <li key={link.to} className="w-full">
-      <NavLink
-        to={link.to}
-        onClick={() => setIsMenuOpen(false)}
-        className="block w-full px-6 py-5 text-center active:bg-[#ffffff22] active:scale-95 transition-all"
+        className={`absolute top-[100px] left-0 w-full h-[500px] flex flex-col justify-center items-center shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-2 ${
+          isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
+        }`}
       >
-        {link.label}
-      </NavLink>
-    </li>
-  ))}
-</ul>
-
+        {[
+          { to: "/", label: "Home" },
+          { to: "/about", label: "About" },
+          { to: "/explore", label: "Explore" },
+          { to: "/contact", label: "Contact" },
+        ].map((link) => (
+          <li key={link.to} className="w-full">
+            <NavLink
+              to={link.to}
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full px-6 py-5 text-center active:bg-[#ffffff22] active:scale-95 transition-all"
+            >
+              {link.label}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
     </header>
   );
 };

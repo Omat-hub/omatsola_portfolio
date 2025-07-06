@@ -1,10 +1,12 @@
 const About = () => {
   return (
     <section className="py-20 md:py-0">
-      <article className="grid grid-cols-1 md:grid-cols-6 gap-2 min-h-screen container-padding text-pantone">
-        <div className="md:col-span-3 pt-10 md:pt-30">
+      <article className="grid grid-cols-1 md:grid-cols-6 gap-2 min-h-screen px-4 md:pr-6 md:pl-0 lg:pr-8 lg:pl-0 text-pantone">
+        {/* Image side (2/5 columns) */}
+       
+        <div className="order-1 md:order-2 md:col-span-3 pt-10 md:pt-30">
           <header>
-            <h1 className=" text-[clamp(5rem,8vw,8rem)]">About</h1>
+            <h1 className=" text-[clamp(5rem,8vw,8rem)] text-right">About</h1>
           </header>
           {/* Paragraphs */}
           <section>
@@ -91,38 +93,9 @@ const About = () => {
               </a>
             </div>
           </section>
-
-          <div className="flex flex-col w-full gap-6 mb-6 md:mb-8">
-            <p className=" text-2xl text-left w-full md:w-[30ch]">
-              Seeking a frontend developer who understands great design? Let’s
-              connect.
-            </p>
-
-            <div className="flex flex-row text-center text-base md:text-lg font-medium justify-between  border-1 border-highlight">
-              <a
-                href="https://wa.me/qr/4CBTXBLTT4APO1"
-                className="flex-1 py-6  w-full    hover:bg-green-300 transition "
-              >
-                Whatsapp
-              </a>
-              <a
-                href="https://github.com/Omat-hubs"
-                className="flex-1 py-6  w-full   hover:bg-red-300 transition "
-              >
-                Github
-              </a>
-              <a
-                href="https://www.linkedin.com/in/omatsolayarumen"
-                className="flex-1 py-6  w-full   hover:bg-blue-300 transition  "
-              >
-                LinkedIn
-              </a>
-            </div>
-          </div>
         </div>
 
-        {/* Image side (2/5 columns) */}
-        <aside className="md:col-span-3 w-full h-auto sticky top-0 self-start">
+         <aside className="order-2 md:order-1 md:col-span-3 w-full h-auto sticky top-0 self-start">
           <img
             src="images/2150170514.jpg"
             alt="artist painting paper"

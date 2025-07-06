@@ -5,7 +5,7 @@ const Preloader = ({ isLoading }) => (
     {isLoading && (
       <motion.div
         key="page-loader"
-        initial={{ y: "-30%" }} // Start above the screen
+        initial={{ y: "-10%" }} // Start above the screen
         animate={{ y: 0 }} // Slide down to center
         exit={{ y: "100%" }} // Slide down (out) below the screen
         transition={{ duration: 1, ease: "circInOut" }}
@@ -21,7 +21,7 @@ const Preloader = ({ isLoading }) => (
           }}
           className="text-2xl font-bold"
         >
-          Yarumen Omatsola
+          Omatsola Yarumen
         </motion.div>
       </motion.div>
     )}
