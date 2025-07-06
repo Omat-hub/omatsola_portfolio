@@ -1,18 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   // Close the mobile menu when the user clicks outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
-      const target = event.target;
-      const isClickInside =
-        target.closest(".md:hidden") || target.closest("nav");
-      if (!isClickInside) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        isMenuOpen
+      ) {
         setIsMenuOpen(false);
       }
     };
@@ -21,7 +23,7 @@ const Header = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [isMenuOpen]);
 
   // Toggle hamburger menu visibility
   const toggleMenu = () => {
@@ -32,7 +34,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 w-full z-20 transition-colors duration-300 container-padding text-offwhite bg-pantone backdrop-blur shadow-md`}
     >
-      <div className="flex justify-between items-center py-6 ">
+      <div className="flex justify-between items-center py-8 md:py-6 ">
         <div className="text-base">Omatsola Yarumen</div>
         <nav className="relative">
           <button
@@ -66,6 +68,7 @@ const Header = () => {
 
       {/* Mobile menu placed here for full width */}
       <ul
+        ref={menuRef}
         className={`absolute top-[100px] left-0 w-full h-[500px] flex flex-col justify-center items-center shadow-lg md:hidden text-offwhite bg-pantone transition-all duration-300 ease-in-out gap-2 ${
           isMenuOpen ? "flex opacity-100" : "hidden opacity-0"
         }`}
