@@ -13,7 +13,7 @@ const Contact = () => {
         <img
           src="/images/portfolioimg.jpeg"
           alt="Omatsola Yarumen"
-          className="w-full  mt-15 object-cover h-[450px] md:pt-0 md:h-[520px] rounded-4xl shadow-lg"
+          className="w-full  mt-15 object-cover h-[450px] md:mt-0 md:h-[520px] rounded-4xl shadow-lg"
         />
       </figure>
 

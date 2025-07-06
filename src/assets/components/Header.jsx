@@ -4,18 +4,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Handle scroll to change background on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 5);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   // Toggle hamburger menu visibility
   const toggleMenu = () => {
@@ -24,9 +15,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-20 transition-colors duration-300 container-padding text-offwhite   ${
-        scrolled ? "bg-pantone backdrop-blur shadow-md" : "bg-pantone/50"
-      }`}
+      className={`fixed top-0 left-0 w-full z-20 transition-colors duration-300 container-padding text-offwhite bg-pantone backdrop-blur shadow-md`}
     >
       <div className="flex justify-between items-center py-6 ">
         <div className="text-base">Omatsola Yarumen</div>
