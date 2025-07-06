@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section className="py-20 md:py-0">
-      <article className="grid grid-cols-1 md:grid-cols-6 gap-2 min-h-screen px-4 md:pr-6 md:pl-0 lg:pr-8 lg:pl-0 text-pantone">
+      <article className="grid grid-cols-1 md:grid-cols-6 gap-6 min-h-screen px-4 md:pr-6 md:pl-0 lg:pr-8 lg:pl-0 text-pantone">
         {/* Image side (2/5 columns) */}
        
         <div className="order-1 md:order-2 md:col-span-3 pt-10 md:pt-30">

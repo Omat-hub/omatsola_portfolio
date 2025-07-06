@@ -16,7 +16,8 @@ const RootLayout = () => {
   }, [location]);
 
   return (
-    <>
+    <div className=" min-h-screen">
+      
       <Header />
       <main className="relative ">
         <Preloader isLoading={loading} />
@@ -24,7 +25,8 @@ const RootLayout = () => {
         {!loading && <Outlet />}
       </main>
       <Footer />
-    </>
+    
+    </div>
   );
 };
 

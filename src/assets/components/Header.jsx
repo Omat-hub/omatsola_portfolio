@@ -10,7 +10,7 @@ const Header = () => {
   // Handle scroll to change background on scroll
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 5);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,7 +28,7 @@ const Header = () => {
         scrolled ? "bg-pantone backdrop-blur shadow-md" : "bg-pantone/50"
       }`}
     >
-      <div className="flex justify-between items-center py-8 ">
+      <div className="flex justify-between items-center py-6 ">
         <div className="text-base">Omatsola Yarumen</div>
         <nav className="relative">
           <button
@@ -43,7 +43,7 @@ const Header = () => {
             )}
           </button>
 
-          <ul className="hidden md:flex space-x-6 text-base">
+          <ul className="hidden md:flex space-x-10 text-base">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

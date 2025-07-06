@@ -13,13 +13,13 @@ const ProjectDetails = () => {
   }
 
   return (
-    <section className=" pt-30 text-accent ">
+    <section className=" pt-30 text-pantone ">
       <div className="md:flex md:flex-row-reverse container-padding">
-        <h1 className="md:[writing-mode:vertical-rl]  text-[clamp(1.5rem,8vw,3rem)] leading-none ">
+        <h1 className="md:[writing-mode:vertical-rl]  text-[clamp(1.5rem,8vw,3rem)] leading-none text-accent">
           {project.title}
         </h1>
 
-        <article className="grid grid-cols-1 md:grid-cols-2 gap-2 ">
+        <article className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
           <img
             src={project.imageUrl}
             alt={project.title}
