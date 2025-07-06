@@ -6,7 +6,22 @@ import { AiOutlineClose } from "react-icons/ai";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Handle scroll to change background on scroll
+  // Close the mobile menu when the user clicks outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const target = event.target;
+      const isClickInside =
+        target.closest(".md:hidden") || target.closest("nav");
+      if (!isClickInside) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   // Toggle hamburger menu visibility
   const toggleMenu = () => {
