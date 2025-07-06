@@ -43,7 +43,7 @@ const Header = () => {
             )}
           </button>
 
-          <ul className="hidden md:flex space-x-10 text-base">
+          <ul className="hidden md:flex md:space-x-10 space-x-6 text-base">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
