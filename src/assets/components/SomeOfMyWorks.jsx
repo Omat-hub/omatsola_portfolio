@@ -9,7 +9,7 @@ const SomeOfMyWorks = () => {
       </h2>
       <ProjectCard showAll={false} />
 
-      <div className="flex justify-self-center pt-5  items-center w-full max-w-sm">
+      <div className="flex md:justify-self-end pt-2  items-center w-fit max-w-sm">
         <Link to="/explore" className=" btn-secondary">
           Explore →
         </Link>
