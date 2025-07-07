@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ShortAbout = () => {
   return (
-    <section className="flex flex-col md:flex-row md:min-h-[60vh]  items-center md:items-center justify-end py-30 container-padding bg-gray-300">
+    <section className="flex flex-col md:flex-row items-center md:items-center justify-end py-30 container-padding bg-gray-300">
       <div className="flex flex-col flex-1 items-start md:items-end justify-center gap-5 max-w-prose">
         <p className="text-base text-justify md:text-left text-pantone leading-relaxed">
           Frontend developer and UI designer focused on crafting
